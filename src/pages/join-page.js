@@ -12,8 +12,6 @@ export function JoinPage(props) {
 
   useEffect(() => {
     if (state.user && state.topic) {
-      console.log('should init ipfs');
-
       try {
         const ipfs = new window.Ipfs({
           EXPERIMENTAL: {
@@ -33,15 +31,14 @@ export function JoinPage(props) {
           if (id) {
             ipfs.pubsub.subscribe(state.topic, (msg) => {
               dispatch(actionPushMessage(msg));
-            }, console.error);
+            });
 
             dispatch(actionSetIpfsNode(ipfs));
-
             history.push('/chat');
           }
         });
       } catch (e) {
-        console.error(e);
+        throw e;
       }
     }
   }, [state.user, state.topic, dispatch, history]);

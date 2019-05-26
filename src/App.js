@@ -13,16 +13,18 @@ function App() {
   const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
 
   return (
-    <AppDispatchContext.Provider value={dispatch}>
-      <AppStateContext.Provider value={state}>
-        <Router>
-          <div className="page">
-            <Route path="/" exact component={JoinPage} />
-            <Route path="/chat" component={ChatPage} />
-          </div>
-        </Router>
-      </AppStateContext.Provider>
-    </AppDispatchContext.Provider>
+    <React.Fragment>
+      <AppDispatchContext.Provider value={dispatch}>
+        <AppStateContext.Provider value={state}>
+          <Router basename="/ipfs-chat">
+            <div className="page">
+              <Route path="/" exact component={JoinPage} />
+              <Route path="/chat" component={ChatPage} />
+            </div>
+          </Router>
+        </AppStateContext.Provider>
+      </AppDispatchContext.Provider>
+    </React.Fragment>
   );
 }
 

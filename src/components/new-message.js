@@ -12,15 +12,13 @@ export default function NewMessage() {
   const handleSubmit = useCallback((ev) => {
     ev.preventDefault();
 
-    console.log('shoud publish', message);
-
     ipfs.pubsub.publish(topic, Buffer.from(JSON.stringify({
       fromUser: user,
       message,
     })));
 
     setMessage('');
-  }, [message, ipfs, topic]);
+  }, [message, ipfs, topic, user]);
 
   return (
     <React.Fragment>

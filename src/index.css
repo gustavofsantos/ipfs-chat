@@ -94,17 +94,17 @@ form {
 }
 
 .other-message {
-  background-color: greenyellow;
-  color: black;
+  align-items: start;
 }
 
 .my-message {
-  background-color: aquamarine;
-  color:black;
+  align-items: end;
 }
 
 .message {
   padding: 6px;
+  display: flex;
+  flex-direction: column;
 }
 
 .message__author {
@@ -156,6 +156,11 @@ form {
   border: 1px solid #707db0;
   padding-left: 12px;
   color: white;
+}
+
+.new-message__input:focus {
+  border: 1px solid #707db0;
+  background-color: #707db0;
 }
 
 .new-message__button {
