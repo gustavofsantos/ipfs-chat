@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ipfs-chat/static/css/main.d3a2a600.chunk.css",
-    "main.js": "/ipfs-chat/static/js/main.d9130193.chunk.js",
-    "main.js.map": "/ipfs-chat/static/js/main.d9130193.chunk.js.map",
+    "main.js": "/ipfs-chat/static/js/main.e0ef0140.chunk.js",
+    "main.js.map": "/ipfs-chat/static/js/main.e0ef0140.chunk.js.map",
     "runtime~main.js": "/ipfs-chat/static/js/runtime~main.3c27f136.js",
     "runtime~main.js.map": "/ipfs-chat/static/js/runtime~main.3c27f136.js.map",
     "static/js/2.e47f792e.chunk.js": "/ipfs-chat/static/js/2.e47f792e.chunk.js",
     "static/js/2.e47f792e.chunk.js.map": "/ipfs-chat/static/js/2.e47f792e.chunk.js.map",
     "index.html": "/ipfs-chat/index.html",
-    "precache-manifest.ba63ce1e8c164ffc832f470b19cec544.js": "/ipfs-chat/precache-manifest.ba63ce1e8c164ffc832f470b19cec544.js",
+    "precache-manifest.f06866ad33e9a5ea686d836063630237.js": "/ipfs-chat/precache-manifest.f06866ad33e9a5ea686d836063630237.js",
     "service-worker.js": "/ipfs-chat/service-worker.js",
     "static/css/main.d3a2a600.chunk.css.map": "/ipfs-chat/static/css/main.d3a2a600.chunk.css.map"
   }
