@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef4b01dd3db8c9675ba4fb3b6e2e3fbc",
+    "revision": "77d29483368452b4578bce6177d88e32",
     "url": "/ipfs-chat/index.html"
   },
   {
-    "revision": "4645206a73135a3fe870",
+    "revision": "f083afe75f857c892137",
     "url": "/ipfs-chat/static/css/main.06834b8e.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ipfs-chat/static/js/2.197b69a4.chunk.js"
   },
   {
-    "revision": "4645206a73135a3fe870",
-    "url": "/ipfs-chat/static/js/main.99344612.chunk.js"
+    "revision": "f083afe75f857c892137",
+    "url": "/ipfs-chat/static/js/main.95e46946.chunk.js"
   },
   {
     "revision": "d020640af89f471d820e",
