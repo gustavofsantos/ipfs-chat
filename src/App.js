@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useReducer } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import JoinPage from './pages/join-page';
+import ChatPage from './pages/chat-page';
+import reducer, { INITIAL_STATE } from './state/app-reducer';
+import { AppDispatchContext, AppStateContext } from './state/app-context';
 
+/**
+ * App main component
+ * @returns {*}
+ */
 function App() {
+  const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppDispatchContext.Provider value={dispatch}>
+      <AppStateContext.Provider value={state}>
+        <Router>
+          <div className="page">
+            <Route path="/" exact component={JoinPage} />
+            <Route path="/chat" component={ChatPage} />
+          </div>
+        </Router>
+      </AppStateContext.Provider>
+    </AppDispatchContext.Provider>
   );
 }
 
