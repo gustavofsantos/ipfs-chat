@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ipfs-chat/static/css/main.06834b8e.chunk.css",
+    "main.js": "/ipfs-chat/static/js/main.99344612.chunk.js",
+    "main.js.map": "/ipfs-chat/static/js/main.99344612.chunk.js.map",
+    "runtime~main.js": "/ipfs-chat/static/js/runtime~main.3c27f136.js",
+    "runtime~main.js.map": "/ipfs-chat/static/js/runtime~main.3c27f136.js.map",
+    "static/js/2.197b69a4.chunk.js": "/ipfs-chat/static/js/2.197b69a4.chunk.js",
+    "static/js/2.197b69a4.chunk.js.map": "/ipfs-chat/static/js/2.197b69a4.chunk.js.map",
+    "index.html": "/ipfs-chat/index.html",
+    "precache-manifest.94aae97aa0c9349b943a18deeea6f504.js": "/ipfs-chat/precache-manifest.94aae97aa0c9349b943a18deeea6f504.js",
+    "service-worker.js": "/ipfs-chat/service-worker.js",
+    "static/css/main.06834b8e.chunk.css.map": "/ipfs-chat/static/css/main.06834b8e.chunk.css.map"
+  }
+}
